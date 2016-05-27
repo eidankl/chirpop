@@ -1,0 +1,14 @@
+
+<!--Start Form-->
+<form class="form-auth" ng-submit="register()">
+    <h2>Register</h2>
+    <p class="text-warning">{{error_message}}</p>
+    <!--User Name (use ng-model to bind the username to our $scope)-->
+    <input type="username" ng-model="user.username" placeholder="Username" class="form-control"><br>
+    <!--Password (use ng-model to bind the password to our $scope)-->
+    <input type="password" ng-model="user.password" placeholder="Password" class="form-control"><br>
+    <!--Submit Button-->
+    <input type="submit" value="Register" class="btn btn-primary" />
+</form>
+<!--End Form-->
+
