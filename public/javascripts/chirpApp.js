@@ -12,7 +12,7 @@ var app = angular.module('chirpApp',['ngRoute', 'ngResource']).run(function($htt
     $rootScope.current_user = '';
 
     //log out function straight from the navigation
-    $rootScope.logout = function(){
+    $rootScope.signout = function(){
         //call the http end point
         $http.get('auth/signout');
         //set $rootScope authenticated and current_user to blank
